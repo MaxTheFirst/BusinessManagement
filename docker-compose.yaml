@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  bot:
+    build: ./bot
+    container_name: ${BOT_CONTAINER}
+    env_file:
+      - .env
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '10'
+    restart: always
