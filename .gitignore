@@ -1,0 +1,8 @@
+.env.test
+.env.prod
+.DS_Store
+echo/
+.codegpt
+.pyc
+.spec
+bot/.vscode
